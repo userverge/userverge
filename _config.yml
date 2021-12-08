@@ -1,0 +1,6 @@
+title: userverge
+baseurl: ""
+url: ""
+theme: minima
+plugins:
+  - jekyll-feed
