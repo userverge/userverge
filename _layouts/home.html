@@ -1,6 +1,22 @@
 {% include head.html %}
 <section class="sections">
     <section>{% include header.html %}</section>
-    <section id="useFullHeight">{{content}}</section>
+    <section>
+        <h1>Categories</h1>
+        {% include categories.html %}
+        <!-- <a href="#">Show More <i class="fa-light fa-arrow-right"></i></a> -->
+    </section>
+    <br id="divider">
+    <section>
+        <h1>Latest Articles</h1>
+        <p>There are currently no articles.</p>
+        <!-- {% for post in site.posts %}
+        <a href="{{post.url}}">
+            <div class="postsLatest">
+                <h1>{{post.category}}: {{post.title}}</h1>
+            </div>
+        </a>
+        {% endfor %} -->
+    </section>
     <section>{% include footer.html %}</section>
 </section>

@@ -12,6 +12,22 @@ body {
 a {color: var(--accent-primary)}
 ::selection {background: transparnet; color: gray;}
 ::-webkit-scrollbar {width: 0px;}
+button {
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+    .rightHeader p {font-size: 0px !important;}
+    .rhButtons {right: 0px !important;}
+    .rhButtons button {font-size: 0px !important;padding: 10px 10px !important;}
+    .rhButtons button i {font-size: 14px !important;}
+}
 
 header {
     height: 50px;
@@ -27,8 +43,13 @@ header img {
 .rightHeader {
     width: 100%;
     text-align: right;
+    cursor: default;
 }
-
+.rhButtons {
+    position: absolute;
+    right: 130px;
+    top: 12px;
+}
 
 .contentFooter {
     display: flex;
@@ -49,8 +70,62 @@ header img {
     width: var(--clamp);
 }
 
-#useFullHeight {
-    align-items: center;
-    height: 500px;
-    display: flex;
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    grid-gap: 14px;
+}
+.category h1 {
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 274px;
+    margin-top: -68px;
+    margin-left: 80px;
+}
+.category h1 i {
+    font-size: 32px;
+    margin-top: -6px;
+    margin-left: -42px;
+    position: absolute;
+}
+.category img {
+    width: 100%;
+    height: 108px;
+    border-radius: 7px;
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.highlight {
+    background: #3e79b9;
+    color: white;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+
+.authors {
+    line-height: 40px;
+}
+.authors a {
+    display: inline-block;
+    background: var(--accent-primary);
+    color: white !important;
+    border-radius: 50px;
+    padding: 0px 14px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 4px;
+}
+.authors a:hover {
+    filter: brightness(0.8);
+}
+.authors a img {
+    height: 32px;
+    margin: 0px 0px -11px -10px;
+    border-radius: 50px;
+    width: 32px;
+    margin-right: 4px;
 }

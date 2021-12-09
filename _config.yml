@@ -4,3 +4,4 @@ url: ""
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-avatar

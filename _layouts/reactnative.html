@@ -1,0 +1,21 @@
+{% include head.html %}
+<section class="sections">
+    <section>{% include header.html %}</section>
+    <section>
+        <h1>{{page.category}}</h1>
+        <div class="articles">
+            {% assign psize = site.categories.ReactNative | size %}
+            {% if psize == 0 %} 
+              <p>There are no articles for this category yet. Please stay tune.</p>
+            {% endif %}
+            {% for post in site.categories.ReactNative %}
+            <a href="{{post.url}}">
+                <div  class="l-t-article">
+                    <h1>{{post.title}}</h1>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    <section>{% include footer.html %}</section>
+</section>
