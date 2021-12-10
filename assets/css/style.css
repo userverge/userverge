@@ -21,6 +21,17 @@ button {
     margin-right: 8px;
     cursor: pointer;
 }
+.highlight {
+    background: #3e79b9;
+    color: white;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+code {
+    background: #3e79b93d;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
 
 @media only screen and (max-width: 620px) {
     .rightHeader p {font-size: 0px !important;}
@@ -95,16 +106,13 @@ header img {
     border-radius: 7px;
 }
 
+.article {font-family: arial}
+.article h1 {font-size: 28px}
 .article img {
     max-width: 100%;
     border-radius: 4px;
 }
-.highlight {
-    background: #3e79b9;
-    color: white;
-    padding: 1px 10px;
-    border-radius: 4px;
-}
+
 
 .authors {
     line-height: 40px;

@@ -9,14 +9,13 @@
     <br id="divider">
     <section>
         <h1>Latest Articles</h1>
-        <p>There are currently no articles.</p>
-        <!-- {% for post in site.posts %}
+        {% for post in site.posts %}
         <a href="{{post.url}}">
             <div class="postsLatest">
                 <h1>{{post.category}}: {{post.title}}</h1>
             </div>
         </a>
-        {% endfor %} -->
+        {% endfor %}
     </section>
     <section>{% include footer.html %}</section>
 </section>
