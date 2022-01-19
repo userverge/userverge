@@ -1,6 +1,6 @@
 # userverge
 # Creating a New Article
-Want to help contribute to the Help Center? Write or update an article!
+Want to help contribute to the userverge? Write or update an article!
 
 ## 🛡️ Requirements 
  - The communication must be clear and well explained for the user to understand
