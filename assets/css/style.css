@@ -7,8 +7,6 @@
 
 body {
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
-    color: white;
-    background: rgb(21, 21, 21);
 }
 
 a {color: var(--accent-primary)}
@@ -39,7 +37,7 @@ code {
     .rightHeader p {font-size: 0px !important;}
     .rhButtons {right: 0px !important;}
     .rhButtons button {font-size: 0px !important;padding: 10px 10px !important;}
-    .rhButtons button svg {font-size: 14px !important;}
+    .rhButtons button i {font-size: 14px !important;}
 }
 
 header {
@@ -96,7 +94,7 @@ header img {
     margin-top: -68px;
     margin-left: 80px;
 }
-.category h1 svg {
+.category h1 i {
     font-size: 32px;
     margin-top: -6px;
     margin-left: -42px;
