@@ -5,3 +5,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-avatar
+
+include:
+ - _pages
